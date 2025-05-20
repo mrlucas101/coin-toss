@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coin-toss</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game">
+        <h1>Coin Toss</h1>
+        <section id="input">
+            <h2>Choose Heads or Tails</h2>
+
+                <div class="button-input">
+                    <button onclick="runGame('Heads')">Heads</button>
+                    <button onclick="runGame('Tails')">Tails</button>
+                </div>
+
+        </section>
+
+        <section id="output">
+            <h2>Result</h2>
+
+                <div class="game-output">
+                    <p><strong>Your Guess:</strong> <span id="prediction">-</span></p>
+                    <p><strong>Coin Flip Result:</strong> <span id="flip">-</span></p>
+                    <p><strong>Game Result:</strong> <span id="result">-</span></p>
+                    <p><strong>Total Games:</strong> <span id="count">0</span></p>
+                    <p><strong>Wins:</strong> <span id="wins">0</span></p>
+                    <p><strong>Losses:</strong> <span id="losses">0</span></p>
+                </div>
+
+        </section>
+
+        <div class="resetButton">
+            <button onclick="resetGame()">Reset Game</button>
+        </div>
+
+    </div>
+
+    <script src="logic.js"></script>
+
+</body>
+</html>
